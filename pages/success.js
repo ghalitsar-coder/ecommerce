@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import { clearCart } from "../redux/cartSlice";
 import { useDispatch } from "react-redux";
 import { runFireWork } from "../lib/utils";
+import { BsBagCheckFill } from 'react-icons/bs';
+
 const Success = () => {
   const dispatch = useDispatch();
   useEffect(() => {

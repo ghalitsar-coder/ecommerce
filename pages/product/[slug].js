@@ -83,7 +83,7 @@ const ProductDetails = ({ product, products }) => {
               </span>
             </p>
           </div>
-          <div className="buttons">
+          <div className={`${quantity > 0 ? "buttons": "hiddenCheckout"}  `}>
             <button
               type="button"
               className="add-to-cart"

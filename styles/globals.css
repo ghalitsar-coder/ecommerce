@@ -409,6 +409,10 @@ span.text-red {
 .btn:hover {
   transform: scale(1.1, 1.1);
 }
+
+.hiddenCheckout {
+  display: none;
+}
 .product-detail-container {
   display: flex;
   gap: 40px;
