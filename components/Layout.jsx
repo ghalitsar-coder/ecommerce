@@ -1,9 +1,22 @@
-import React from 'react'
-
-const Layout = () => {
+import React from "react";
+import Head from "next/head";
+import { Navbar, Footer } from "./";
+const Layout = ({ children }) => {
   return (
-    <div>Layout</div>
-  )
-}
+    <div className="layout">
+      <Head>
+        <title>JS Mastery store</title>
+      </Head>
+      <header>
+        <Navbar />
+      </header>
+      <main className="main-container">{children}</main>
+      <footer>
+        <Footer />
+      </footer>
+    </div>
+  );
+};
 
-export default Layout
+export default Layout;
+ 
